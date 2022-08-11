@@ -1,0 +1,70 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box; }
+
+#grilla{
+    background-color: coral;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: .5fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    grid-template-areas:"nav header header " 
+                        "nav main main "
+                        "nav main main "
+                        "nav footer footer ";
+
+}
+#principal{
+ 
+    grid-area: main;    
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr .5fr;
+   
+    grid-template-areas:"productos productos aside " 
+                        "servicio servicio aside";
+    
+
+
+}
+
+header{
+    background-color: aqua;
+    grid-area: header ;
+}
+
+
+
+
+#servicio{
+    background-color: lightpink;
+    grid-area: servicio;
+}
+#productos{
+    background-color: rgba(134, 182, 21, 0.712);
+    grid-area: productos;
+}
+
+#asidemain{
+background-color: lightgrey;
+grid-area: aside;
+}
+
+
+
+nav{
+    background-color: limegreen;
+    grid-area: nav;
+  
+}
+
+footer{
+    background-color: yellow;
+    grid-area: footer;
+}
+
+@media only screen and (max) {
+    
+}
